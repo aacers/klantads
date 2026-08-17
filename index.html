@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Klantads — AI-ads die eruitzien als echte klanten</title>
-  <meta name="description" content="15 native klantvideo’s per maand voor shops. Geen filming, geen casting. Starter €1.497. Trial 5 video’s €497." />
+  <title>Klantads — AI ads that look like real customers</title>
+  <meta name="description" content="15 native customer videos per month for shops. No filming, no casting. Starter €1,497/mo. Trial: 5 videos €497." />
   <style>
     :root {
       --bg: #f4efe6;
@@ -29,6 +29,7 @@
       padding: 20px 0 8px;
     }
     .logo { font-weight: 700; letter-spacing: -0.03em; font-size: 1.15rem; }
+    header nav { display: flex; gap: 16px; align-items: center; }
     header a { color: var(--ink); text-decoration: none; font-size: 0.95rem; }
     .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 28px 0 56px; align-items: center; }
     .hero h1 {
@@ -38,7 +39,7 @@
       margin: 12px 0 16px;
     }
     .kicker { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.72rem; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; }
-    .lede { font-size: 1.15rem; color: var(--muted); max-width: 36ch; }
+    .lede { font-size: 1.15rem; color: var(--muted); max-width: 38ch; }
     .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
     .btn {
       display: inline-block; background: var(--accent); color: var(--accent-ink);
@@ -80,6 +81,8 @@
     }
     .fine { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.8rem; color: var(--muted); }
     footer { padding: 24px 0 40px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.8rem; }
+    .yt { margin-top: 10px; }
+    .yt a { color: var(--accent); }
     @media (max-width: 760px) {
       .hero, .grid3, .cards, .who, .hero-visual { grid-template-columns: 1fr; }
       .hero-visual img:first-child { grid-row: auto; aspect-ratio: 3/4; }
@@ -90,121 +93,132 @@
   <div class="wrap">
     <header>
       <div class="logo">Klantads</div>
-      <a href="#boek">Boek 12 min</a>
+      <nav>
+        <a href="#examples">Examples</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#book">Book 12 min</a>
+      </nav>
     </header>
 
     <div class="hero">
       <div>
-        <p class="kicker">Voor Shopify-shops</p>
-        <h1>Ads die eruitzien als een echte klant.</h1>
-        <p class="lede">Geen studio. Geen casting. Geen wachten tot een creator je product heeft. 15 native video’s per maand, klaar voor TikTok, Reels, Shorts en Meta.</p>
+        <p class="kicker">For Shopify shops</p>
+        <h1>Ads that look like a real customer.</h1>
+        <p class="lede">No studio. No casting. No waiting for a creator to unbox your product. 15 native videos a month, ready for TikTok, Reels, Shorts and Meta.</p>
         <div class="cta-row">
-          <a class="btn" href="#boek">Boek een call van 12 min</a>
-          <a class="btn ghost" href="#voorbeelden">Bekijk 3 voorbeelden</a>
+          <a class="btn" id="cta-trial" href="#pricing">Start trial · €497</a>
+          <a class="btn ghost" href="#examples">Watch a sample</a>
         </div>
-        <p class="price">Starter €1.497 / maand · Trial 5 video’s €497</p>
+        <p class="price">Trial 5 videos €497 · Starter €1,497 / month</p>
+        <p class="fine yt">Sample short: <a href="https://www.youtube.com/shorts/Xxg0Em0Bl2g">I have not filmed a single ad in 3 months</a></p>
       </div>
       <div class="hero-visual">
-        <img src="img/lotte-praten.jpg" alt="Lotte, het vaste personage, in de keuken" />
-        <img src="img/lotte-serum.jpg" alt="Zelfde gezicht, serum in hand" />
-        <img src="img/lotte-cta.jpg" alt="Zelfde gezicht, comment-CTA" />
+        <img src="img/lotte-praten.jpg" alt="Same face, kitchen light, talking to camera" />
+        <img src="img/lotte-serum.jpg" alt="Same face, serum in hand" />
+        <img src="img/lotte-cta.jpg" alt="Same face, comment CTA" />
       </div>
     </div>
 
-    <section id="voorbeelden">
-      <h2>Zelfde gezicht. Ander product. Dat is het bewijs.</h2>
+    <section id="examples">
+      <h2>Same face. Different product. That is the proof.</h2>
       <div class="grid3">
         <figure>
-          <img src="img/lotte-serum.jpg" alt="Voorbeeld skincare" />
-          <figcaption>Skincare — serum, keukenlicht, geen studio.</figcaption>
+          <img src="img/lotte-serum.jpg" alt="Skincare example" />
+          <figcaption>Skincare — serum, kitchen light, no studio.</figcaption>
         </figure>
         <figure>
-          <img src="img/lotte-suppletub.jpg" alt="Voorbeeld supplement" />
-          <figcaption>Supplement — wit tub, zelfde hoodie, andere hook.</figcaption>
+          <img src="img/lotte-suppletub.jpg" alt="Supplement example" />
+          <figcaption>Supplement — white tub, same hoodie, new hook.</figcaption>
         </figure>
         <figure>
-          <img src="img/lotte-kaars.jpg" alt="Voorbeeld home" />
-          <figcaption>Home — kaars, expres rommelig, native 9:16.</figcaption>
+          <img src="img/lotte-kaars.jpg" alt="Home example" />
+          <figcaption>Home — candle, a bit messy on purpose, native 9:16.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section>
-      <h2>Wat je koopt</h2>
+    <section id="pricing">
+      <h2>What you buy</h2>
       <div class="cards">
         <div class="card">
           <p class="tag">STARTER</p>
-          <h3>€1.497 / maand</h3>
-          <p>Opzegbaar na 30 dagen.</p>
+          <h3>€1,497 / month</h3>
+          <p>Cancel after 30 days.</p>
           <ul>
-            <li>15 AI-klantvideo’s, 9:16</li>
-            <li>3 hooks per winnend concept</li>
-            <li>Levering in Drive / CapCut</li>
-            <li>1 feedbackronde per batch</li>
-            <li>Rechten: organisch + paid ads</li>
+            <li>15 AI customer videos, 9:16</li>
+            <li>3 hooks per winning concept</li>
+            <li>Delivery in Drive / CapCut</li>
+            <li>1 revision round per batch</li>
+            <li>Rights: organic + paid ads</li>
           </ul>
+          <div class="cta-row">
+            <a class="btn" id="pay-starter" href="#book">Pay Starter €1,497</a>
+          </div>
         </div>
         <div class="card">
-          <p class="tag">TRIAL · EERST TESTEN</p>
-          <h3>5 video’s €497</h3>
-          <p>Telt mee als je upgrade.</p>
+          <p class="tag">TRIAL · TEST FIRST</p>
+          <h3>5 videos €497</h3>
+          <p>Credits toward Starter if you upgrade.</p>
           <ul>
-            <li>Jouw bestverkopende product</li>
-            <li>5 hooks, 1 personage</li>
-            <li>Klaar binnen 7 dagen</li>
-            <li>Geen retainer als niks trekt</li>
+            <li>Your best-selling product</li>
+            <li>5 hooks, 1 character</li>
+            <li>Ready in 7 days</li>
+            <li>No retainer if nothing lands</li>
           </ul>
+          <div class="cta-row">
+            <a class="btn" id="pay-trial" href="#book">Pay trial €497</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>Voor wie</h2>
+      <h2>Who this is for</h2>
       <div class="who">
         <div class="card">
-          <h3>Wel</h3>
+          <h3>Yes</h3>
           <ul>
-            <li>Shopify-shops: skincare, supplement, home, fashion</li>
-            <li>Product dat je kunt vasthouden of op iemands gezicht ziet</li>
-            <li>Lokale diensten met hoge ticket (salon, kliniek, keuken)</li>
+            <li>Shopify shops: skincare, supplements, home, fashion</li>
+            <li>A product you can hold or see on someone’s face</li>
+            <li>Local high-ticket services (salon, clinic, kitchen)</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Niet</h3>
+          <h3>No</h3>
           <ul>
-            <li>Crypto, gok, sweeps</li>
-            <li>“Verdien 10k met AI”-aanbod</li>
-            <li>Shops zonder product in een doos</li>
+            <li>Crypto, gambling, sweeps</li>
+            <li>“Make 10k with AI” offers</li>
+            <li>Shops with nothing that ships in a box</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="boek">
-      <h2>12 minuten. Dan weet je of het past.</h2>
+    <section id="book">
+      <h2>12 minutes. Then you know if it fits.</h2>
       <div class="card">
         <form id="lead">
-          <input name="naam" placeholder="Naam" required />
+          <input name="naam" placeholder="Name" required />
           <input name="shop" placeholder="Website / Shopify" required />
-          <input name="product" placeholder="Bestverkopende product" required />
-          <input name="email" type="email" placeholder="E-mail" required />
-          <textarea name="ads" rows="3" placeholder="Draai je al ads? Ja/nee + wat je nu uitgeeft"></textarea>
-          <button type="submit">Kopieer aanvraag — plak in mail of DM</button>
-          <p class="fine">Geen newsletter. Of comment <strong>ADS</strong> onder een video.</p>
+          <input name="product" placeholder="Best-selling product" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <textarea name="ads" rows="3" placeholder="Already running ads? Yes/no + spend"></textarea>
+          <button type="submit">Copy request — paste in email or DM</button>
+          <p class="fine">No newsletter. Or comment <strong>ADS</strong> under a video.</p>
         </form>
         <p class="fine" id="ok" hidden></p>
       </div>
     </section>
 
-    <footer>Klantads · AI-klantvideo’s voor shops · Geen filming.</footer>
+    <footer>Klantads · AI customer videos for shops · No filming. · <a href="https://www.youtube.com/@TheDert5656">YouTube</a></footer>
   </div>
   <script>
     document.getElementById("lead").addEventListener("submit", function (e) {
       e.preventDefault();
       var f = e.target;
       var body = [
-        "Klantads-aanvraag",
-        "Naam: " + f.naam.value,
+        "Klantads request",
+        "Name: " + f.naam.value,
         "Shop: " + f.shop.value,
         "Product: " + f.product.value,
         "Email: " + f.email.value,
@@ -215,7 +229,7 @@
       }
       var ok = document.getElementById("ok");
       ok.hidden = false;
-      ok.textContent = "Gekopieerd. Plak dit in een mail of DM.";
+      ok.textContent = "Copied. Paste this into an email or DM.";
     });
   </script>
 </body>
